@@ -1,0 +1,79 @@
+.body-container {
+    display: flex;
+    background-position: top center;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url('../src/bg-main.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.survey-form {
+    width: 80%;
+    height: 80%;
+    text-align: center;
+    background-color: aliceblue;
+    /*background-color: firebrick;*/
+    opacity: 0.95;
+    /*color: aliceblue;*/
+    color: firebrick;
+}
+
+.qtn-date {
+    font-size: xx-large;
+}
+
+.msg-deny-invite {
+    display: none;
+}
+
+.case-date {
+    color: aliceblue;
+}
+
+.btn-case-date {
+    border-radius: 12%;
+}
+
+.date-info {
+    display: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: aliceblue;
+    /*background-color: firebrick;*/
+    opacity: 0.95;
+    /*color: aliceblue;*/
+    color: firebrick;
+}
+
+.msg-approve-decision {
+    background-color: firebrick;
+    color: aliceblue;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 5%;
+    padding: 2%;
+}
+
+.date-params-item {
+    display: inline;
+    align-items: center;
+}
+
+.date-params-item-title {
+    font-size: large;
+}
+
+.date-params-item-button {
+    background-color: brown;
+    border-radius: 8px;
+    color: white;
+    width: 40%;
+}
+
+.date-params-item-value {
+    display: none;
+    font-size: large;
+}

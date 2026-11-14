@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Приглашение на свидание</title>
+        <link rel="stylesheet" href="styles/index.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script
+                src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js">
+        </script>
+    </head>
+    <body class="body-container">
+        <div class="survey-form p-8 rounded-2xl shadow-2xl max-w-md">
+            <h1 class="greetings-block text-3xl font-bold mb-4">Привет, красотка!</h1>
+            <p class="qtn-date text-xl mb-6">Пойдешь со мной на свидание?</p>
+            <p class="msg-deny-invite text-m mb-6">Я и такой случай предусмотрел, значит ДА?</p>
+            <div class="case-date space-x-4">
+                <button id="yesBtn" class="btn-case-date bg-green-500 px-6 py-3 hover:bg-green-600">
+                    Да
+                </button>
+                <button id="noBtn" class="btn-case-date bg-red-700 px-6 py-3 hover:bg-red-900">
+                    Нет
+                </button>
+            </div>
+        </div>
+        <div class="date-info p-8 rounded-2xl shadow-2xl max-w-md">
+            <p class="msg-approve-decision text-xl font-bold">Я очень рад, что ты согласилась встретиться</p>
+            <ul class="date-params">
+                <li class="date-params-item">
+                    <p class="date-params-item-title">
+                        Время встречи:
+                    </p>
+                    <button id="btnDateTime" class="date-params-item-button">Узнать 😽</button>
+                    <p id="dateTimeValue" class="date-params-item-value">
+                        14 октября, 19:30 🕢
+                    </p>
+                </li>
+                <li class="date-params-item">
+                    <p class="date-params-item-title">
+                         Место встречи:
+                    </p>
+                    <button id="btnDatePlace" class="date-params-item-button">Узнать 😽</button>
+                    <p id="datePlaceValue" class="date-params-item-value">
+                        Бульвар Чавайна 41А, Чайная комната 📍
+                    </p>
+                </li>
+                <li class="date-params-item">
+                    <p class="date-params-item-title">
+                        Дресскод:
+                    </p>
+                    <button id="btnDateDresscode" class="date-params-item-button">Узнать 😽</button>
+                    <p id="dateDresscodeValue" class="date-params-item-value">
+                        Красная кофточка или беленький лонг 🐈‍⬛
+                    </p>
+                </li>
+                <li class="date-params-item">
+                    <p class="date-params-item-title">
+                        Что взять с собой кошечке?
+                    </p>
+                    <button id="btnDateThings" class="date-params-item-button">Узнать 😽</button>
+                    <p id="dateThingsValue" class="date-params-item-value">
+                        Свою неземную красоту ❤️
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+        <script src="scripts/running-button.js"></script>
+        <script src="scripts/info-button.js"></script>
+        <script src="scripts/get-value-button.js"></script>
+        <script src="api/consent-handler.js"></script>
+        <script src="api/send-organizer.js"></script>
+    </body>
+</html>
