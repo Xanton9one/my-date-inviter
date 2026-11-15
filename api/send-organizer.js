@@ -1,3 +1,5 @@
+import handler from "./consent-handler";
+
 const yesBtn = document.getElementById('yesBtn');
 yesBtn.addEventListener('click', async () => {
   try {
